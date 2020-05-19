@@ -9,7 +9,7 @@ string Filler(int n) {
     return n < 10 ? "0" : "";
 }
 
-// DONE: Complete this helper function
+// Complete this helper function
 // INPUT: Long int measuring seconds
 // OUTPUT: HH:MM:SS
 string Format::ElapsedTime(long seconds) {
