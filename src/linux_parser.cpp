@@ -114,7 +114,7 @@ float LinuxParser::CpuUtilization() {
     ss >> token >> usertime >> nice >> system >> idle >> iowait >> irq >> softirq >> steal >> guest >> guest_nice;
 
     usertime = usertime - guest;
-    long nicetime = nicetime - guest_nice;
+    long nicetime = nice - guest_nice;
     long idlealltime = idle + iowait;
     long systemalltime = system + irq + softirq;
     long virtalltime = guest + guest_nice;
